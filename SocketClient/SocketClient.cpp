@@ -1,11 +1,11 @@
-﻿#include <Windows.h> // Включение заголовочного файла для работы с функциями Windows API
-#include <iostream> // Включение заголовочного файла для стандартного ввода/вывода
-#include <WinSock2.h> // Включение заголовочного файла для работы с сокетами в Windows
-#include <WS2tcpip.h> // Включение заголовочного файла для работы с интернет-протоколами (TCP/IP)
+﻿#include <Windows.h>
+#include <iostream> 
+#include <WinSock2.h> 
+#include <WS2tcpip.h> 
 
-using namespace std; // Использование стандартного пространства имен `std`
+using namespace std; 
 
-int main() { // Начало определения функции main
+int main() { 
 
     WSADATA wsaData; // Структура для информации о использовании библиотеки Winsock
     ADDRINFO hints; // Структура для указания параметров сетевого адреса
