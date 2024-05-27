@@ -1,13 +1,12 @@
-﻿#define WIN32_LEAN_AND_MEAN // Определяет макрос, чтобы избавиться от некоторых менее используемых элементов Windows.h
+﻿#define WIN32_LEAN_AND_MEAN 
+#include <Windows.h> 
+#include <iostream> 
+#include <WinSock2.h> 
+#include <WS2tcpip.h> 
 
-#include <Windows.h> // Подключение заголовочного файла Windows.h, который содержит определения для работы с Windows API
-#include <iostream> // Подключение заголовочного файла для работы с вводом/выводом
-#include <WinSock2.h> // Подключение заголовочного файла для работы с сокетами в Windows
-#include <WS2tcpip.h> // Подключение заголовочного файла для работы с интернет-протоколами (TCP/IP)
+using namespace std; 
 
-using namespace std; // Использование стандартного пространства имен `std`
-
-int main() { // Начало определения функции main
+int main() { 
 
     WSADATA wsaData; // Структура для информации о использовании библиотеки Winsock
     ADDRINFO hints; // Структура для указания параметров сетевого адреса
